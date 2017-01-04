@@ -10,10 +10,8 @@ class MyEditor extends React.Component {
         this.state = {
             editorState: EditorState.createWithContent(ContentState.createFromText(`var message = "Hello World"
     + "with four spaces indentation"
-
 console.log(message);`))
         };
-        // console.log(this.state.editorState)
         this.onChange = (editorState) => this.setState({editorState});
         this.handleKeyCommand = this.handleKeyCommand.bind(this);
     }
